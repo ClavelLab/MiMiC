@@ -13,7 +13,7 @@ We hope that this tool will lead to the further adoption and use of minimal micr
 
 Before installating Protologger, all the dependancies below must be installed;
 - [PRODIGAL](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-11-119)
-- [HMMSCAN] (https://academic.oup.com/nar/article/39/suppl_2/W29/2506513)
+- [HMMSCAN](https://academic.oup.com/nar/article/39/suppl_2/W29/2506513)
 
 Additional R modules used by MiMiC that must be installed are;
 - dplyr
