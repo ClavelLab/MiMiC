@@ -39,11 +39,11 @@ Some of these files requires the user to alter the code to include their files (
 `hmmscan --cpu 20 --acc --noali --cut_ga --tblout $RESULTS.table_results Pfam-A_2019.hmm $ASSEMBLY.faa`
 In this command, the user must change $RESULTS to their wanted prefix to their results, the Pfam-A_2019.hmm file should link to their prepared version of Pfam that will be used throughout the analysis and the $ASSEMBLY command will link to the predicted proteome of the metagenomic assembly (FAA format).
 
-Step_2; This file parses the output of hmmscan into the format used by MiMiC. Users must modify line 12 and 13 with their directory with their files and their output folders, respectively.
+<b>Step_2;</b> This file parses the output of hmmscan into the format used by MiMiC. Users must modify line 12 and 13 with their directory with their files and their output folders, respectively.
 
-Step_3; This script generates the Pfam vector of the input metegenome using the command; `Rscript script_2_pfam_vector.R Pfam.A.clans $PATH`, where the user must provide the link to the Pfam.A.clans file they are using and the $PATH to their folder with the output from Step_2. 
+<b>Step_3;</b> This script generates the Pfam vector of the input metegenome using the command; `Rscript script_2_pfam_vector.R Pfam.A.clans $PATH`, where the user must provide the link to the Pfam.A.clans file they are using and the $PATH to their folder with the output from Step_2. 
 
-Step_4; This script conducts the final comparison of the metagenomes Pfam vector file to the genome database. Both such files need to be provided within the R script on line 19 and 122 (genome database file) and line 22 (metagenome Pfam file). The name of the output file can be stated on line 110.
+<b>Step_4;</b> This script conducts the final comparison of the metagenomes Pfam vector file to the genome database. Both such files need to be provided within the R script on line 19 and 122 (genome database file) and line 22 (metagenome Pfam file). The name of the output file can be stated on line 110.
 
 
 # Example dataset
