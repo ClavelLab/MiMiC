@@ -35,7 +35,7 @@ MiMiC is currently designed as a series of four scripts which the user must appl
 
 Some of these files requires the user to alter the code to include their files (all files will accept command line arguments in future editions).
 
-Step_1; This script conducts metagenomics assembly, protein prediction and runs hmmscan to identify Pfams. Knowing that the majority of users will have their own assembly pipelines, the only step required is;
+<b>Step_1;</b> This script conducts metagenomics assembly, protein prediction and runs hmmscan to identify Pfams. Knowing that the majority of users will have their own assembly pipelines, the only step required is;
 `hmmscan --cpu 20 --acc --noali --cut_ga --tblout $RESULTS.table_results Pfam-A_2019.hmm $ASSEMBLY.faa`
 In this command, the user must change $RESULTS to their wanted prefix to their results, the Pfam-A_2019.hmm file should link to their prepared version of Pfam that will be used throughout the analysis and the $ASSEMBLY command will link to the predicted proteome of the metagenomic assembly (FAA format).
 
