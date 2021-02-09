@@ -1,3 +1,5 @@
+![logo](/logo.png)
+
 # MiMiC
 Minimal Microbial Consortia creation tools
 
