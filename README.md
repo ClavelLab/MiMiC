@@ -39,11 +39,9 @@ Some of these files requires the user to alter the code to include their files (
 
 <b>Step_1;</b>  step_1_contig_to_Pfam_v2.sh
 
-Description: 
-Identifies the proteins within your genomes/metagenome and annotate them against the Pfam database.
+Description: Identifies the proteins within your genomes/metagenome and annotate them against the Pfam database.
 
-Usage:
-`bash step_1_contig_to_Pfam.sh -i PathToInputFolder -d PathToPfamDatabase -t optionforProdigal(meta or single)`
+Usage: `bash step_1_contig_to_Pfam.sh -i PathToInputFolder -d PathToPfamDatabase -t optionforProdigal(meta or single)`
 
 Options:
 -i path to input folder where contigs/assemblies are kept 
@@ -58,11 +56,9 @@ output_fna : all fna (prodigal) files are generated in this folder
 
 <b>Step_2;</b> step_2_hmmscan_parsed_v2.pl
 
-Description:
-Parses the Hmmscan output into a format MiMiC can utilise in Step 3.
+Description: Parses the Hmmscan output into a format MiMiC can utilise in Step 3.
 
-Usage:
-`perl step_2_hmmscan_Parsed_v2.pl path_to_input_folder`
+Usage: `perl step_2_hmmscan_Parsed_v2.pl path_to_input_folder`
 
 Notes:
 The input folder should contain only faa files inside.
@@ -70,11 +66,9 @@ The input folder should contain only faa files inside.
 
 <b>Step_3;</b> step_3_pfam_vector_script_v2.R
 
-Description:
-This script makes a binary vector for genome/metagenome profile of Pfams.
+Description: This script makes a binary vector for genome/metagenome profile of Pfams.
 
-Usage:
-`Rscript --vanilla script_3_pfam_vector.R -i pfam.A.clans -p Step2Output -o Step3Output`
+Usage: `Rscript --vanilla script_3_pfam_vector.R -i pfam.A.clans -p Step2Output -o Step3Output`
 
 Options:
 -i Pfam.A.clans file from pfam database 
@@ -83,12 +77,9 @@ Options:
 
 <b>Step_4;</b> step_4_mimic_v2.R
 
-Description:
+Description: This script calculates the minimal microbial consortia for a metagenome based the minimum number of species covering maximum number of metagenomic Pfams.
 
-This script calculates the minimal microbial consortia for a metagenome based the minimum number of species covering maximum number of metagenomic Pfams.
-
-Usage:
-`Rscript --vanilla step_4_mimic.txt -m metagenomefileName -g genomeVectorFileName -i iterationNumber -o mimicOutputName -k kneepointbasedOutputName`
+Usage: `Rscript --vanilla step_4_mimic.txt -m metagenomefileName -g genomeVectorFileName -i iterationNumber -o mimicOutputName -k kneepointbasedOutputName`
 
 Options:
 -m input metagenome Pfam vector
@@ -112,8 +103,7 @@ These files include;
 
 The reference database file (`MiMiC_reference_Database.tar.gz`) contains three folders inside;
 
-- 1.Host specific
-This folder has three host specific species pfam binary vector 
+- 1.Host specific, this folder has three host specific species pfam binary vector 
   - human 
   - pig
 
@@ -121,9 +111,11 @@ This folder has three host specific species pfam binary vector
   - MetagenomeVector_937.txt : pfam vecor of metagenomes used in the MiMiC paper study
   - All_meta_937.txt : meta data information with sample name and the source of the metagenome
 
-- 3.Mock community : Pfam vector of the mBarc mock community metagenome 
+- 3.Mock community 
+  - Pfam vector of the mBarc mock community metagenome 
 
-- 4.NCBI RefSeq : Pfam vector of the ncbi refseq genomes used in the MiMiC study
+- 4.NCBI RefSeq
+  - Pfam vector of the ncbi refseq genomes used in the MiMiC study
 
 
 
