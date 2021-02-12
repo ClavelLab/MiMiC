@@ -101,7 +101,7 @@ These files include;
 
 # Reference data sets
 
-The reference database file (`MiMiC_reference_Database.tar.gz`) contains three folders inside;
+The reference database file (`MiMiC_reference_Database.tar.gz`) contains four folders inside;
 
 - 1.Host specific, this folder has three host specific species pfam binary vector 
   - human 
