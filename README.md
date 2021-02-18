@@ -37,7 +37,7 @@ MiMiC is currently designed as a series of four scripts which the user must appl
 
 Some of these files requires the user to alter the code to include their files (all files will accept command line arguments in future editions).
 
-<b>Step_1;</b>  step_1_contig_to_Pfam_v2.sh
+<b>Step_1;</b>  step_1_contig_to_Pfam.sh
 
 Description: Identifies the proteins within your genomes/metagenome and annotate them against the Pfam database.
 
@@ -54,17 +54,17 @@ output_pfam : all hmmscan output files are generated in this folder
 output_fna : all fna (prodigal) files are generated in this folder 
 
 
-<b>Step_2;</b> step_2_hmmscan_parsed_v2.pl
+<b>Step_2;</b> step_2_hmmscan_parsed.pl
 
 Description: Parses the Hmmscan output into a format MiMiC can utilise in Step 3.
 
-Usage: `perl step_2_hmmscan_Parsed_v2.pl path_to_input_folder`
+Usage: `perl step_2_hmmscan_parsed.pl path_to_input_folder`
 
 Notes:
 The input folder should contain only faa files inside.
 
 
-<b>Step_3;</b> step_3_pfam_vector_script_v2.R
+<b>Step_3;</b> step_3_pfam_vector.R
 
 Description: This script makes a binary vector for genome/metagenome profile of Pfams.
 
@@ -75,7 +75,7 @@ Options:
 -p path for input folder where all pfam parsed files are available
 -o name of output file name (default is PfamVector.txt)
 
-<b>Step_4;</b> step_4_mimic_v2.R
+<b>Step_4;</b> step_4_mimic.R
 
 Description: This script calculates the minimal microbial consortia for a metagenome based the minimum number of species covering maximum number of metagenomic Pfams.
 
