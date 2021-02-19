@@ -6,7 +6,7 @@ Minimal Microbial Consortia creation tools
 
 # What is MiMiC?
 
-MiMiC proposes minimal microbial consortia from the functional potential of a given metagenomic sample. This is done by producing a binary vector (presence,absence) of all Pfams within the sample and comparing this again our pre-calculated genome database. Through an iterative process, the genomes that best match the metagenomic samples functiona repertoire are selected. Once all functions have been accounted for, or the addition of further genome accounts for no more Pfams, the process is halted and the user provided with the list and statistics for selection.
+MiMiC proposes minimal microbial consortia from the functional potential of a given metagenomic sample. This is done by producing a binary vector (presence,absence) of all Pfams within the sample and comparing this again our pre-calculated genome database. Through an iterative process, the genomes that best match the metagenomic samples functional repertoire are selected. Once all functions have been accounted for, or the addition of further genome accounts for no more Pfams, the process is halted and the user provided with the list and statistics for selection.
 
 We hope that this tool will lead to the further adoption and use of minimal microbial consortia for next generation probiotics as well as basic research into microbial communities.
 
