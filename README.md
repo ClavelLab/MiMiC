@@ -121,7 +121,7 @@ The reference database file (`MiMiC_reference_Database.tar.gz`) contains four fo
 
 
 # Citation
-We ask that anyone who uses MiMiC cites not only our publication but the list of publications below which provide tools and databases which are integral for MiMiCs working:
+We ask that anyone who uses MiMiC cites not only [our publication](https://sfamjournals.onlinelibrary.wiley.com/doi/full/10.1111/1751-7915.13845) but also the list of publications below, which provide tools and databases which are integral for MiMiCs working:
 
 
 ### Tools
